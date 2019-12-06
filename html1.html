@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .Bicimg {
+        display:none;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("#s1").click(function(){
+          $("big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id ="gallery">
+      <img src = "cat.jpg" width = "200" height = "150"><br>
+      <img src = "cat.jpg" id = "s1" width = "200" height = "150"><br>
+      <img src = "cat.jpg" id = "big1" class = "bicimg" width = "200" height = "150"><br>
+    </div>
+  </body>
+</html>
