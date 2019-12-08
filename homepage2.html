@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        font-size:23px;
+        font-weight:bold;
+      }
+      .slide {
+        display:none;
+        width:1300px;
+        border:2px solid #333;
+        box-shadow:2px 2px 3px #000;
+        float:left;
+        margin-top:30px;
+        margin-right:20px;
+      }
+    </style>
+    <script src ="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#stoggle').click (function(){
+          $('.slide').slideToggle(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type = "button" id = "stoggle" value = "open/close">
+    </form>
+    <div class = "slide">
+      <p width = 1300 height = 500>
+        Welcome to Cat's house!! <br>
+        Our site was first opened in December 2019 <br>
+        The cat is the main, But there are many other pets <br><br>
+        Caution : please refrain from swearing and slandering others.<br>
+        if not, you will not be able to enter the community!!
+      </p>
+    </div>
+  </body>
+</html>

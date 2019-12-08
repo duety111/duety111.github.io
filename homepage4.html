@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      input{
+        background:skyblue;
+        width:150px;
+        height:30px;
+        border:2px solid red;
+      }
+      img {
+        border:2px solid black;
+      }
+    </style>
+    <script src ="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          $("#dog").animate({width:"500px"},1000);
+          $("#dog").animate({height:"300px"},1000);
+          $("#dog").animate({borderRadius:"50px"},1000);
+          $("#dog").animate({marginLeft: "+=200px"},"slow");
+          $("#dog").animate({marginLeft: "-=200px"},"slow");
+        });
+        $("#btn2").click(function(){
+          $("#dog2").animate({width:"500px"},1000);
+          $("#dog2").animate({height:"300px"},1000);
+          $("#dog2").animate({borderRadius:"50px"},1000);
+          $("#dog2").animate({marginLeft: "+=200px"},"fast");
+          $("#dog2").animate({marginLeft: "-=200px"},"fast");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img src ="dog.jpg" width = "300" height = "200" id ="dog"><br>
+    <b> Cute dog</b><br>
+    <input id ="btn" value ="Close Up"><br>
+    <img src ="dog1.jpg" width = "300" height = "200" id ="dog2"><br>
+    <b> another!</b><br>
+    <input id ="btn2" value ="Close Up">
+  </body>
+</html>

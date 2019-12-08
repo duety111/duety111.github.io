@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #gallery {
+        width:820px;
+        height:400px;
+        background:skyblue;
+        border:2px solid black;
+        border-radius:15px;
+      }
+      .bigpic {
+        position:absolute;
+        display:none;
+        left:20px;
+        width:400px;
+        height:340px;
+      }
+      p {
+        color:yellow;
+        font-size:20px;
+        margin:10px;
+        display:inline;
+      }
+      img {
+        margin-top:30px;
+      }
+      #c1 {
+        margin-left:110px;
+      }
+      #c2 {
+        margin-left:180px;
+      }
+      #big2 {
+        margin-left:400px;
+      }
+    </style>
+    <script src = "http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#c1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+        $("#c2").click(function(){
+          $("#big2").fadeIn(1000);
+        });
+        $("#big2").click(function(){
+          $("#big2").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id ="gallery">
+      <p id = "c1">We have a new family!</p>
+      <img src = "cat.jpg" id = "big1" class = "bigpic">
+      <p id = "c2">and one more thing!!</p>
+      <img src = "cat1.jpg" id ="big2" class = "bigpic">
+    </div>
+  </body>
+</html>
